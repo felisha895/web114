@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Jacob Phillips, 4/1/2025-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB 114 Chapter 4</title>
+</head>
+<script>
+    const favDay = prompt("What is your favorite day of the week? (e.g., Monday, Tuesday)");
+
+    switch(favDay.toLowerCase()) {
+        case "sunday":
+            console.log("That's the day when everyone goes to church!");
+            break;
+        case "monday":
+            console.log("That's the day when school starts!");
+            break;
+        case "tuesday":
+            console.log("That's the day when rush hour becomes the lightest!");
+            break;
+        case "wednesday":
+            console.log("That's the day when it's halfway through the week!");
+            break;
+        case "thursday":
+            console.log("That's the day when everyone gets excited about Friday!");
+            break;
+        case "friday":
+            console.log("That's the day when school ends for the weekend!");
+            break;
+        case "saturday":
+            console.log("That's the day when everything gets crowded!");
+            break;
+        default:
+            alert("OK?");
+    }
+</script>
+<body>
+    <header>
+        <h1>WEB 114 Chapter 4</h1>
+    </header>
+    <section>
+        <h2>Questions</h2>
+        <ol>
+            <li>When should you use a switch statement in your projects?</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Answers</h2>
+        <ol>
+            <li>Because switch startements are great alternatives to if statements, it provides a more descriptive way of comparing values with multiple variants.</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Exercises</h2>
+        <ol>
+            <li>Prompt for favorite day: The program uses prompt to ask the user for their favorite day and stores it in the favDay variable.</li>
+            <li>Switch statement: Use a switch statement with favDay.toLowerCase() to convert the input to lowercase for case-insensitive comparison.</li>
+            <li>Cases: Inside the switch statement, each case block checks if the favDay matches a specific day of the week (converted to lowercase).</li>
+            <li>If a match is found, the corresponding message is displayed using console.log.</li>
+            <li>Each case block needs a break statement to exit the switch statement after displaying the message.</li>
+            <li>Default case: A default case handles any input that doesn't match a specific day. It displays a generic message.</li>
+        </ol>
+    </section>
+</body>
+</html>
