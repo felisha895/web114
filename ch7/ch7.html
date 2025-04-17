@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Jacob Phillips, 4/17/2025 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB 114 Chapter 7</title>
+</head>
+<script>
+    let name = prompt("Enter your name:"); // Step 1
+    let gas = calcGasAvg(); // Step 4
+
+    confirm(name + "'s average weekly gas bill is " + gas.toFixed(2)); // Step 5
+
+    function calcGasAvg() { // Step 3
+        let count = 0;
+        let total = 0;
+        let weeklyGas = 0;
+        // Step 3a
+
+        weeklyGas = parseFloat(prompt("Please enter your weekly gas total. Type -1 when done.")); // Step 2
+
+        while(weeklyGas !== -1) {
+            total = total + weeklyGas; // Step 3b
+            count++; // Step 3c
+
+            weeklyGas = parseFloat(prompt("Please enter your weekly gas total. Type -1 when done.")); // Step 2
+        }
+        return total / count; // Step 3d
+    }
+</script>
+<body>
+    <header>
+        <h1>What is the purpose of a function?</h1>
+        <p>To create a code block that can be reused for a specific purpose.</p>
+    </header>
+</body>
+</html>
