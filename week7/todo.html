@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Jacob Phillips, 4/29/2025 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 Event Listeners</title>
+</head>
+<body>
+    <h1>Questions:</h1>
+    <ol>
+        <li>Why is the JavaScript textContent property safer than innerHTML?</li>
+        <p>Since textContent only changes the text within an element and innerHTML changes the HTML content within an element, The textContent is safer because in innerHTML, you run the risk of messing up your entire HTML structure then just changing text.</p>
+        <li>Explain the relationship between an HTML attribute and a corresponding DOM property (explain the connection to JavaScript).  Use a specific example in your answer.</li>
+        <p>You can use HTML attributes like class and id to add it to JavaScript. For example, if we want to target an h1 with class header, we would use the document.getElementsByClassName("header") method to access the h1.</p>
+    </ol>
+    <h1>Exercises:</h1>
+    <ul id="taskList"></ul>
+    <input type="text" id="taskInput" placeholder="Enter task name...">
+    <button id="addTaskBtn">Add Task</button>
+    <script src="todo.js"></script>
+</body>
+</html>
