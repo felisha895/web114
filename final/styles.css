@@ -1,0 +1,42 @@
+/* Jacob Phillips, 5/7/2025 */
+
+html {
+    background-color: #80c6ff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container {
+    text-align: center;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 1em;
+}
+.question {
+    padding: 1em;
+    background-color: #f700ff;
+    margin: 2em 15em;
+    border-radius: 1em;
+}
+.question p {
+    font-size: 24px;
+}
+img {
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 450px;
+}
+.incorrect {
+    color: red;
+}
+.answer {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.answer p {
+    padding: 1em 2em;
+    margin: 1em 10em;
+    background-color: #00ffd5;
+    font-size: 20px;
+    border-radius: 1em;
+}
